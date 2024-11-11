@@ -2,6 +2,7 @@ import store from './store.jpg'
 import './App.css';
 import products from './products'
 import ProductItem from './components/ProductItem';
+import ProductList from './components/ProductList';
 function App() {
   // const productList = products.map((product, index) => {
 
@@ -21,7 +22,7 @@ function App() {
       <img src={store} alt='store image' width="100%" height="400px" />
       <div className='products'>
 <ProductItem/>
-
+<ProductList/>
       </div>
     </div>
   );
