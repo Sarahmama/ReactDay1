@@ -3,12 +3,12 @@ import './App.css';
 import products from './Products'
 
 function App() {
-  const productList =   products.map((product) =>(
-    <div >
+  const productList =   products.map((product,index) =>{return(
+    <div key={index}>
       <img src={product.image} width="200px"/>
       <h2>{product.name}</h2>
       <h4>{product.price}</h4>
-      </div>)
+      </div>)}
      )
      
   return (
