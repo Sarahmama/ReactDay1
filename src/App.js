@@ -1,17 +1,17 @@
 import store from './store.jpg'
 import './App.css';
 import products from './products'
-
+import ProductItem from './components/ProductItem';
 function App() {
-  const productList = products.map((product, index) => {
+  // const productList = products.map((product, index) => {
 
-      <div key={index}>
-        <img src={product.image} width="200px" />
-        <h2>{product.name}</h2>
-        <h4>{product.price}</h4>
-      </div>
-  }
-  );
+  //     <div key={index}>
+  //       <img src={product.image} width="200px" />
+  //       <h2>{product.name}</h2>
+  //       <h4>{product.price}</h4>
+  //     </div>
+  // }
+  // );
 
   return (
     <div className="App">
@@ -20,7 +20,7 @@ function App() {
       <p> make your own Hoodies and tote bag</p>
       <img src={store} alt='store image' width="100%" height="400px" />
       <div className='products'>
-        {productList}
+<ProductItem/>
 
       </div>
     </div>
