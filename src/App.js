@@ -20,8 +20,7 @@ function App() {
       <h1>Sarah's Store</h1>
       <p> make your own Hoodies and tote bag</p>
       <img src={store} alt='store image' width="100%" height="400px" />
-      <div className='products'>
-<ProductItem/>
+      <div className=''>
 <ProductList/>
       </div>
     </div>

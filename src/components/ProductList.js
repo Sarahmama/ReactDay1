@@ -1,19 +1,18 @@
 import React from 'react'
-
+import ProductItem from './ProductItem';
 import products from '../products'
+import '../App.css'
 
 const ProductList = () => {
       const productList = products.map((product, index) => {
 return(
       <div key={index}>
-        <img src={product.image} width="200px" />
-        <h2>{product.name}</h2>
-        <h4>{product.price}</h4>
+    <ProductItem myProduct={product} />
       </div>)
   });
 
   return (
- <div>{productList}</div>
+ <div className='products'>{productList}</div>
   );
 }
 
